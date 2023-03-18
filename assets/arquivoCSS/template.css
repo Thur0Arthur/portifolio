@@ -1,3 +1,8 @@
+@media (max-width: 720px) {
+    .sectionOne_area{
+        flex-direction: column-reverse;
+    }
+}
 *{
     box-sizing: 0;
     margin: 0;
@@ -5,11 +10,23 @@
 body {
     background-color: #313333;
 }
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #222020;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #a89a9a;
+    border-radius: 2px;
+
+}
+
 /*AREA HEADER*/
 header{
     position: fixed;
     display: flex;
     width: 100vw;
+    height: 60px;
     background-color: rgba(01, 01, 01, 0.5);
 }
 header p{
@@ -32,20 +49,62 @@ nav {
     margin-right: 2vw;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #202222;
+    background-color: #000000;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
 }
 #navigationMenu div:hover{
-    background-color: #000000;
+    background-color: #202222;
 }
+nav img{
+    display: none;
+}
+
 
 /*AREA SECTION ONE*/
 .sectionOne{
     height: 1600px;
-    background-color: aqua;
+    background-color: rgb(44, 44, 44);
 }
+.sectionOne_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionOne_text{
+    margin-right: 20vw;
+}
+.sectionOne_text p{
+    font-size: 20px;
+    color: #fff;
+}
+.sectionOne_text .p{
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+.sectionOne_text h1{
+    color: #fff;
+}
+.sectionOne_text a{
+    text-decoration: none;
+    background-color: #000000;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+.sectionOne_text a:hover{
+    background-color: #202222;
+}
+.sectionOne_IMG{
+
+}
+.sectionOne_IMG img{
+    width: 60px;
+    height: 568px;
+    width: 320px;
+}
+
 
 /*AREA SECTION TWO*/
 .sectionTwo{
