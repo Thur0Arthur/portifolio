@@ -20,7 +20,7 @@
             <li onclick="home()"><p >Início</p></li>
             <li onclick="about()"><p >Sobre</p></li>
             <li onclick="projects()"><p >Projetos</a></li>
-            <li onclick="contact()"><p >Contato</p></li>
+            <li onclick="skills()"><p >Habilidades</p></li>
           </ul>
         </nav>
       </header>
@@ -28,7 +28,7 @@
         <div class="sectionOne-area">
             <div class="sectionOne-text">
                 <p>Olá, eu sou</p>
-                <h1>Arthur Francisco.</h1>
+                <p>Arthur Francisco<b>.</b></p>
                 <p class="p">Desevenvolvedor Front-end</p>
                 <div>
                     <a href="https://www.linkedin.com/in/arthur-francisco-silvestre-186bb0240/" target="_blank">Linkedin</a>
@@ -43,13 +43,73 @@
 
     </section>
     <section class="sectionTwo">
+        <img src="imagens/semfundo.png" alt="">
+        <div class="aboutMe">
+            <h1 class="titulo">Sobre mim</h1>
+            <p>Me chamo Arthur Francisco Silvestre, e sou apaixonado pelo mundo da tecnologia. Meu primeiro contato com programação foi em 2019, com a lingaguem de programação Scratch, mas apenas no final de 2021 foi quando tomei a decisão de entrar de cabeça nesse mundo para me tornar um programador.<br/><br/>
+                Tenho conhecimento de tecnologias voltadas para o front-end, meu foco é aumentar minhas Habilidades sobre o vasto mundo da programação.</p>
+        </div>
     </section>
     <section class="sectionThree">
-
+        <h1 class="titulo">Projetos</h1>
+        <div class="slider">
+            <div class="slider-controls">
+                <div onclick="goPrev()" class="slider-control"><img src="imagens/seta-esquerda.png" alt=""></div>
+                <div onclick="goNext()" class="slider-control"><img src="imagens/seta-direita.png" alt=""></div>
+            </div>
+            <div class="slider-width" >
+                <div class="slider-item" style="background-color: #393939;"><P>SEM PROJETO :(</P></div>
+                <div class="slider-item" style="background-color: #c2c2c2;"><P>SEM PROJETO :(</P></div>
+                <div class="slider-item" style="background-color: #5c5c5c;"><P>SEM PROJETO :(</P></div>
+            </div>
+        </div>
     </section>
     <section class="sectionFour">
+        <h1 class="titulo">Habilidades</h1>
+       <div class="sectionFour-area">
+        <div class="sectionFour-IMGs">
+            <div class="IMGs-one">
+                <img onclick="htmlText()" class="html" src="imagens/html5.png" alt="">
+                <img onclick="cssText()" class="css" src="imagens/css3.png" alt="">
+                <img onclick="JSText()" class="js" src="imagens/js.png" alt="">
+            </div>
+            <div class="IMGs-two">
+                <img onclick="TSText()" class="ts" src="imagens/typescript.png" alt="">
+                <img onclick="gitText()" class="git" src="imagens/git.png" alt="">
+                <img onclick="bddText()" class="bdd" src="imagens/banco de dados.jpg" alt="">    
+            </div>
+        </div>
+        <div class="sectionFour-text">
+            <p class="sectionFour-text-click">Click em uma imagem</p>
+            <p class="htmlText">HTML é uma linguagem de marcação utilizada na construção de páginas na Web. <br/>
+            Tenho quase 2 anos de estudo com essa linguagem.</p>
+            <p class="cssText">CSS é uma linguagem de estilização utilizada na construção de páginas na Web <br/> tenho quase 2 anos de estudo dessa linguagem</p>
+            <p class="JSText">JavaScript é uma linguagem de programação. <br/> Tenho 8 meses de estudo dessa linguagem.</p>
+            <p class="TSText">Usado para adicionar recursos avançados ao JavaScript, o TypeScript é uma linguagem de programação. <br/> Tenho um mês de estudo essa linguagem.</p>
+            <p class="gitText">Git é um sistema de controle de versões. <br/> Tenho 3 meses de estudo desse sistema. </p>
+            <p class="bddText">Tenho 2 meses de estudo da linguagem SQL.</p>
 
+        </div>
+       </div>
     </section>
+    <footer>
+        <div>
+            <p class="logo">#AFS</p>
+            <p>Todos os direitos reservados.</p>
+        </div>
+        <div>
+            <h2>Contato</h2>
+            <p>arthur.fr.silvestre@gmail.com</p>
+            <br/>
+            <p>(63) 9 9100-6778</p>
+        </div>
+        <div>
+            <h2>Redes sociais</h2>
+            <a href="https://www.linkedin.com/in/arthur-francisco-silvestre-186bb0240/" target="_blank">Linkedin</a>
+            <a href="https://github.com/Thur0Arthur" target="_blank">Github</a>
+
+        </div>
+    </footer>
 
 
     <script src="assets/arquivoJS/javascript.js"></script>
