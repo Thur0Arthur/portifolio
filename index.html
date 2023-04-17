@@ -55,10 +55,57 @@
         <div class="slider">
             <div class="slider-controls">
                 <div onclick="goPrev()" class="slider-control"><img src="imagens/seta-esquerda.png" alt=""></div>
+                <div onclick="goNone()" class="slider-control"><img src="imagens/botao-play.png" alt=""></div>
                 <div onclick="goNext()" class="slider-control"><img src="imagens/seta-direita.png" alt=""></div>
+                
             </div>
             <div class="slider-width" >
-                <div class="slider-item" id="project-one" style="background-color: #393939;">
+                <div class="slider-item" id="project-calculator">
+                    <div onclick="goFlex()" id="goFlex">
+                        <img src="imagens/seta-esquerda.png" alt="">
+                        <img src="imagens/seta-direita.png" alt="">
+                    </div>
+                    <div class="calculator-area">
+                        <h1>calculadora</h1>
+                        <p id="calculator-result"></p>
+                        <table>
+                            <tr>
+                                <td><button onclick="clean('C')">C</button></td>
+                                <td><button onclick="back('<')"><</button></td>
+                                <td><button onclick="insert('/')">/</button></td>
+                                <td><button onclick="insert('*')">*</button></td>
+                            </tr>
+                            <tr>
+                                <td><button onclick="insert('7')">7</button></td>
+                                <td><button onclick="insert('8')">8</button></td>
+                                <td><button onclick="insert('9')">9</button></td>
+                                <td><button onclick="insert('-')">-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button onclick="insert('4')">4</button></td>
+                                <td><button onclick="insert('5')">5</button></td>
+                                <td><button onclick="insert('6')">6</button></td>
+                                <td><button onclick="insert('+')">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button onclick="insert('1')">1</button></td>
+                                <td><button onclick="insert('2')">2</button></td>
+                                <td><button onclick="insert('3')">3</button></td>
+                                <td rowspan="2"><button onclick="calculate('=')" style="height: 104px;">=</button></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button onclick="insert('0')" style="width: 31vw;">0</button></td>
+                                <td><button onclick="insert('.')">.</button></td>
+                            </tr>
+                        </table>
+                    </div>
+                
+                </div>
+                <div class="slider-item" id="project-clock"">
+                    <div onclick="goFlex()" id="goFlex">
+                        <img src="imagens/seta-esquerda.png" alt="">
+                        <img src="imagens/seta-direita.png" alt="">
+                    </div>
                     <div id="project-time">
                         <div>
                             <span id="horas">00</span>
@@ -74,8 +121,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="slider-item" style="background-color: #c2c2c2;"><P>SEM PROJETO :(</P></div>
-                <div class="slider-item" style="background-color: #5c5c5c;"><P>SEM PROJETO :(</P></div>
+                
+                <div class="slider-item" style="background-color: #5c5c5c;">                    <div onclick="goFlex()" id="goFlex">
+                    <img src="imagens/seta-esquerda.png" alt="">
+                    <img src="imagens/seta-direita.png" alt="">
+                </div><P>SEM PROJETO :(</P></div>
             </div>
         </div>
     </section>

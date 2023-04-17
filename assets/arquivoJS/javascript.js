@@ -103,8 +103,36 @@ function updateMargin() {
   document.querySelector('.slider-width').style.marginLeft = `-${newMargin}px`;
 
 }
-
+function goNone() {
+  let controls = document.querySelector('.slider-controls');
+  controls.style.display = 'none';
+}
+function goFlex() {
+  let controls = document.querySelector('.slider-controls');
+  controls.style.display = 'flex';
+}
 //AREA DOS PROJETOS DENTRO DOS SLIDERS
+
+//pROJETO CALCULADORA
+
+function insert(number){
+  document.querySelector('#calculator-result').innerHTML += number;
+}
+function clean() {
+  document.querySelector('#calculator-result').innerHTML = '';
+}
+function back() {
+  let resultArea = document.querySelector('#calculator-result').innerHTML;
+  document.querySelector("#calculator-result").innerHTML = resultArea.substring(0, resultArea.length - 1);
+}
+function calculate() {
+  let resultArea = document.querySelector('#calculator-result').innerHTML;
+  if(resultArea) {
+    document.querySelector('#calculator-result').innerHTML = eval(resultArea);
+  }else {
+    document.querySelector('#calculator-result').innerHTML = 'Nada..'
+  }
+}
 
 //Projeto RELOGIO
 const hours = document.querySelector('#horas');
