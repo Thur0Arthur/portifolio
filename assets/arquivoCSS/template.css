@@ -321,6 +321,7 @@ nav {
     justify-content: center;
     border-top: 5px solid #000;
     border-bottom: 5px solid #000;
+    flex-direction: column;
 }
 #goFlex {
   background-color: #0562a0;
@@ -331,6 +332,7 @@ nav {
   align-items: center;
   border-radius: 25px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 #goFlex:hover {
   background-color: #324d5f;
@@ -392,8 +394,9 @@ nav {
 }
 #calculator-result {
   height: 30px;
-  width: 99%;
-  background-color: #b10000;
+  width: 98%;
+  background-color: #fff9f9;
+  color: ;
   font-size: 25px;
   color: #000;
   text-align: right;
@@ -408,6 +411,12 @@ nav {
 /*Relogio*/
 #project-clock {
   background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
+}
+#project-clock #goFlex{
+  background: linear-gradient(120deg, #ffe53bd8, #ff2525da);
+}
+#project-clock #goFlex:hover{
+  background: linear-gradient(120deg, #ac9713d8, #7e0d0dda);
 }
 #project-time {
   display: flex;

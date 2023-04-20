@@ -66,6 +66,7 @@ function projects() {
     left:0,
     behavior: 'smooth'
   })
+  goFlex()
 }
 function skills() {
   window.scrollTo({
